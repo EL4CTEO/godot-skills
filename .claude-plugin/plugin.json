@@ -1,0 +1,10 @@
+{
+  "name": "godot-agent-skills",
+  "version": "1.0.0",
+  "description": "Godot 4.7 skills for AI agents, GDScript and C#/.NET: exact API lookup from your engine, safe scene editing, compile checks, 2D/3D, physics, UI, input, animation, shaders, audio, networking, performance, export/CI, editor tools, testing, XR.",
+  "author": { "name": "EL4CTEO" },
+  "homepage": "https://github.com/EL4CTEO/godot-skills",
+  "repository": "https://github.com/EL4CTEO/godot-skills",
+  "license": "MIT",
+  "keywords": ["godot", "godot4", "gdscript", "csharp", "dotnet", "gamedev", "shaders", "multiplayer", "xr"]
+}

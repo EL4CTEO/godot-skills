@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dv42i4fb0i2lw"]
+
+[ext_resource type="Script" path="res://scripts/Main.cs" id="1_0wfyh"]
+[ext_resource type="Script" path="res://scripts/Health.cs" id="2_sugp2"]
+
+[node name="Main" type="Node2D" unique_id=774011334]
+script = ExtResource("1_0wfyh")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1128348337]
+text = "Score: 0"
+
+[node name="Health" type="Node" parent="." unique_id=1724500330]
+script = ExtResource("2_sugp2")
+MaxHealth = 50

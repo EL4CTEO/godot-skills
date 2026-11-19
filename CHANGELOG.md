@@ -1,0 +1,9 @@
+# Changelog
+
+## 1.0.0
+- 18 Godot 4.7 skills for GDScript and C#/.NET.
+- API lookup from the installed engine, with C# names, defaults and deprecation flags.
+- Scene editing through Godot itself (atomic, autoload-safe).
+- Compile checks for GDScript, C# and shaders. Headless smoke runs, tests and exports as JSON.
+- Installers for Claude Code, Codex, OpenCode, Gemini CLI, Copilot and Cursor.
+- Test suite compiles every code example on Godot 4.7.2.

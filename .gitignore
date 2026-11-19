@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.godot/
+.mono/
+bin/
+obj/
+*.user
+dist/
+build/
+.DS_Store
+.claude/settings.local.json
+tests/fixtures/**/export/

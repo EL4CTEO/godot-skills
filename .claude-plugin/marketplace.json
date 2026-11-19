@@ -1,0 +1,12 @@
+{
+  "name": "godot-agent-skills",
+  "description": "Godot 4.7 skills for AI agents (GDScript + C#)",
+  "owner": { "name": "EL4CTEO" },
+  "plugins": [
+    {
+      "name": "godot-agent-skills",
+      "source": "./",
+      "description": "18 tested Godot 4.7 skills: API lookup, scenes, GDScript, C#, 2D/3D, physics, UI, input, animation, shaders, audio, networking, export, testing, XR"
+    }
+  ]
+}

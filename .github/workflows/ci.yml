@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python tools/sync_shared.py --check
+      - run: python tools/validate_skills.py --strict
+      - run: python tools/trigger_check.py
+      - run: bash install/install.sh --project "$RUNNER_TEMP/p" --agent all --copy
+
+  godot-tests:
+    runs-on: ubuntu-latest
+    env:
+      GODOT_VERSION: "4.7.2"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+      - uses: actions/cache@v4
+        id: cache
+        with:
+          path: ~/godot
+          key: godot-mono-${{ env.GODOT_VERSION }}
+      - name: Download Godot .NET
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/godot && cd ~/godot
+          curl -sSL -o g.zip "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_mono_linux_x86_64.zip"
+          unzip -q g.zip && rm g.zip
+      - name: Run tests
+        run: |
+          export GODOT_EXE="$(find ~/godot -type f -name 'Godot_v*_mono_linux.x86_64' | head -1)"
+          python tools/run_tests.py
