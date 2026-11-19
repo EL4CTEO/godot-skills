@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+ .NET build, .NET SDK 8+ (10 works). Python 3.9+ for scripts.
 metadata:
   author: godot-agent-skills
-  version: "1.0.2"
+  version: "1.0.3"
 ---
 
 # C# / .NET in Godot 4.7

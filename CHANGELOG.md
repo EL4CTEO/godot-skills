@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.3
+- README recommends the Godot .NET build with C# for AI agents.
+
 ## 1.0.2
 - README states the skills are based on Godot 4.7.2.
 
