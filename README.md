@@ -10,7 +10,7 @@
 
 # Godot Agent Skills
 
-Godot **4.7** skills for AI coding agents, based on **Godot 4.7.2** (Claude Code, Codex, OpenCode, Gemini CLI, GitHub Copilot, Cursor). They cover GDScript and C#/.NET equally.
+Godot **4.7** skills for AI coding agents (Claude Code, Codex, OpenCode, Gemini CLI, GitHub Copilot, Cursor), based on **Godot 4.7.2**. They cover GDScript and C#/.NET equally.
 
 There are 18 compact skills. Agents look up exact APIs from **your installed engine** instead of guessing, edit scenes safely through Godot itself, and check their work with real compile, test and export runs. Every code example in the skills is compiled on Godot 4.7.2 by the test suite.
 
