@@ -1,3 +1,13 @@
+<p align="center"><img src="assets/banner.png" alt="Godot Skills" width="640"></p>
+
+<p align="center">
+  <a href="https://github.com/EL4CTEO/godot-skills/releases"><img alt="Release" src="https://img.shields.io/github/v/release/EL4CTEO/godot-skills"></a>
+  <a href="https://github.com/EL4CTEO/godot-skills/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/EL4CTEO/godot-skills/actions/workflows/ci.yml/badge.svg"></a>
+  <img alt="Godot 4.7" src="https://img.shields.io/badge/Godot-4.7-478cbf?logo=godotengine&logoColor=white">
+  <img alt="GDScript and C#" src="https://img.shields.io/badge/GDScript%20%7C%20C%23-supported-478cbf">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green"></a>
+</p>
+
 # Godot Agent Skills
 
 Godot **4.7** skills for AI coding agents (Claude Code, Codex, OpenCode, Gemini CLI, GitHub Copilot, Cursor). They cover GDScript and C#/.NET equally.
@@ -58,3 +68,7 @@ python tools/validate_skills.py --strict   # spec, token budgets, links
 python tools/trigger_check.py              # skill routing
 python tools/run_tests.py                  # real-engine tests (set GODOT_EXE if needed)
 ```
+
+## Credits
+
+Godot logo by Andrea Calabró, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.1
+- README banner, badges and logo credit.
+
 ## 1.0.0
 - 18 Godot 4.7 skills for GDScript and C#/.NET.
 - API lookup from the installed engine, with C# names, defaults and deprecation flags.

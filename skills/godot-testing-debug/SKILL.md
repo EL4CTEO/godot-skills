@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+. GdUnit4 6.2.x, gdUnit4Net (gdUnit4.api 5.1, test.adapter 3.1). Python 3.9+.
 metadata:
   author: godot-agent-skills
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Testing and debugging (4.7)

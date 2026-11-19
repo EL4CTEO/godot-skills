@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+ (GDScript and C#).
 metadata:
   author: godot-agent-skills
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Audio (4.7)
