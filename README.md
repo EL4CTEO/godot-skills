@@ -3,14 +3,14 @@
 <p align="center">
   <a href="https://github.com/EL4CTEO/godot-skills/releases"><img alt="Release" src="https://img.shields.io/github/v/release/EL4CTEO/godot-skills"></a>
   <a href="https://github.com/EL4CTEO/godot-skills/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/EL4CTEO/godot-skills/actions/workflows/ci.yml/badge.svg"></a>
-  <img alt="Godot 4.7" src="https://img.shields.io/badge/Godot-4.7-478cbf?logo=godotengine&logoColor=white">
+  <img alt="Godot 4.7.2" src="https://img.shields.io/badge/Godot-4.7.2-478cbf?logo=godotengine&logoColor=white">
   <img alt="GDScript and C#" src="https://img.shields.io/badge/GDScript%20%7C%20C%23-supported-478cbf">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green"></a>
 </p>
 
 # Godot Agent Skills
 
-Godot **4.7** skills for AI coding agents (Claude Code, Codex, OpenCode, Gemini CLI, GitHub Copilot, Cursor). They cover GDScript and C#/.NET equally.
+Godot **4.7** skills for AI coding agents, based on **Godot 4.7.2** (Claude Code, Codex, OpenCode, Gemini CLI, GitHub Copilot, Cursor). They cover GDScript and C#/.NET equally.
 
 There are 18 compact skills. Agents look up exact APIs from **your installed engine** instead of guessing, edit scenes safely through Godot itself, and check their work with real compile, test and export runs. Every code example in the skills is compiled on Godot 4.7.2 by the test suite.
 

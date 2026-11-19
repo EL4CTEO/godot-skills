@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+ (GDScript and C#). OpenXR runtime or headset for testing.
 metadata:
   author: godot-agent-skills
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # XR with OpenXR (4.7)

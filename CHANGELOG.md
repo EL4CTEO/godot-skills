@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2
+- README states the skills are based on Godot 4.7.2.
+
 ## 1.0.1
 - README banner, badges and logo credit.
 

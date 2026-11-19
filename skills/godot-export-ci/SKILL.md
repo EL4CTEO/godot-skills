@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+. Python 3.9+ for scripts/export.py.
 metadata:
   author: godot-agent-skills
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # Export and CI (4.7)
