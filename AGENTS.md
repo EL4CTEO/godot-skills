@@ -7,7 +7,7 @@ This repo contains Agent Skills (`skills/<name>/SKILL.md`, agentskills.io format
 - **Never guess an API:** `python skills/godot-core/scripts/api_lookup.py Class.member` reads the installed engine and returns GDScript and C# signatures, defaults and deprecations.
 - Run scripts; don't read them. Every `skills/*/scripts/*.py` documents its flags in its docstring and prints one compact JSON result. Set `GODOT_EXE` if the engine isn't found.
 - Load a skill's `references/*.md` only when the SKILL.md points you there.
-- Verify edits: `gd_check.py` (GDScript), `cs_build.py` (C#), `shader_check.py` (shaders), `run_godot.py smoke`, `test_run.py`.
+- Verify edits: `gd_check.py` (GDScript), `cs_build.py` (C#), `shader_check.py` (shaders), `run_godot.py smoke`, `test_run.py`. Project checks: `migrate_scan.py` (stale APIs), `addon_inspect.py` (addons), `serve_web.py --check` (Web exports).
 
 | Skill | Use for |
 |---|---|
@@ -29,6 +29,15 @@ This repo contains Agent Skills (`skills/<name>/SKILL.md`, agentskills.io format
 | godot-editor-tooling | @tool, EditorPlugin/EditorDock, importers, GDExtension |
 | godot-testing-debug | GdUnit4, gdUnit4Net, debugging, Logger |
 | godot-xr | OpenXR, controllers, passthrough, comfort |
+| godot-navigation-ai | navmesh, agents, avoidance, AStarGrid2D, enemy AI, behavior trees |
+| godot-3d-gameplay | third-person/orbit/RTS cameras, GridMap, CSG, interactables |
+| godot-procedural | seeded RNG, noise, caves/dungeons, heightmap meshes, chunks |
+| godot-migration | Godot 3 → 4.7, 4.x → 4.7, Unity concepts, stale-API scanner |
+| godot-mobile-web | safe area, lifecycle, touch, IAP, Web threads/hosting, web server |
+| godot-narrative | dialogue addons vs custom, typewriter boxes, quests, cutscenes |
+| godot-modding-dlc | PCK mods, manifests, load order, runtime assets, DLC, patches |
+| godot-game-feel | screen shake, hit-stop, flashes, tweens, Movie Maker |
+| godot-addons | Asset Store, vetting, GDExtension checks, curated 4.7 list |
 
 ## Working on this repo
 - Shared helper: edit `shared/_godotx.py` only, then run `python tools/sync_shared.py`.

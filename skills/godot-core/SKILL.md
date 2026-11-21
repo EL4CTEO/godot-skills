@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+ (standard or .NET build). Python 3.9+ for scripts. .NET 8+ SDK for C# projects.
 metadata:
   author: godot-agent-skills
-  version: "1.0.3"
+  version: "1.1.0"
 ---
 
 # Godot Core (4.7)
@@ -41,6 +41,15 @@ All scripts print one compact JSON object. Run them; you don't need to read them
 | `@tool`, EditorPlugin, docks, import/export plugins, GDExtension | `godot-editor-tooling` |
 | Unit tests (GdUnit4, gdUnit4Net), debugging, logging | `godot-testing-debug` |
 | VR/AR, OpenXR | `godot-xr` |
+| Pathfinding, navmesh, enemy AI, behavior trees | `godot-navigation-ai` |
+| 3D controllers, third-person cameras, GridMap/CSG levels | `godot-3d-gameplay` |
+| Procedural levels, noise, dungeons, runtime meshes | `godot-procedural` |
+| Upgrading from Godot 3 / older 4.x, porting from Unity | `godot-migration` |
+| Phones, tablets, browsers: safe area, lifecycle, Web hosting | `godot-mobile-web` |
+| Dialogue, quests, story flags, cutscenes | `godot-narrative` |
+| Mods, DLC, PCK packs, patches | `godot-modding-dlc` |
+| Screen shake, hit-stop, juice, trailers | `godot-game-feel` |
+| Third-party addons and plugins | `godot-addons` |
 
 ## Tools
 | Need | Command |

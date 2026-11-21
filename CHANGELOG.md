@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+- 9 new skills: godot-navigation-ai, godot-3d-gameplay, godot-procedural, godot-migration, godot-mobile-web, godot-narrative, godot-modding-dlc, godot-game-feel, godot-addons.
+- New scripts: `migrate_scan.py` (stale Godot 3 / 4.x APIs, converter wrapper), `serve_web.py` (Web export check + COOP/COEP server), `addon_inspect.py` (addon compatibility, enable/disable).
+- godot-core routes to the new skills.
+
 ## 1.0.3
 - README recommends the Godot .NET build with C# for AI agents.
 

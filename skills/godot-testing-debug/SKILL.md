@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+. GdUnit4 6.2.x, gdUnit4Net (gdUnit4.api 5.1, test.adapter 3.1). Python 3.9+.
 metadata:
   author: godot-agent-skills
-  version: "1.0.3"
+  version: "1.1.0"
 ---
 
 # Testing and debugging (4.7)
@@ -20,7 +20,7 @@ Before tests, compile: `../godot-gdscript/scripts/gd_check.py` and `../godot-csh
 - Memory: wrap created objects in `auto_free(...)`. The report flags orphan nodes, so treat them as bugs.
 - Doubles: `mock(Class)` + `do_return(v).on(m).method()`, `spy(instance)`, `verify(m, times).method(args)`, `any_int()` and friends.
 - Integration: `var runner := scene_runner("res://player.tscn")`, then `runner.simulate_action_pressed("jump")`, `await runner.simulate_frames(30)`, `runner.simulate_key_pressed(KEY_SPACE)`, `await runner.await_signal("landed")`, `runner.invoke("method")` and `runner.scene()`.
-- CLI (what `test_run.py` calls): `godot --headless --path . -s -d res://addons/gdUnit4/bin/GdUnitCmdTool.gd --ignoreHeadlessMode -c -a res://test`. Exit code 0 means pass and 100 means failures. Reports are JUnit XML under the `-rd` directory.
+- CLI (what `test_run.py` calls): `godot --headless --path . -s -d res://addons/gdUnit4/bin/GdUnitCmdTool.gd --ignoreHeadlessMode -c -a res://test`. Exit code 0 means pass and 100 means failures. If you launch it yourself, close stdin (`< /dev/null`): with `-d`, a runtime error in a test otherwise waits forever at the `debug>` prompt (`test_run.py` already does this). Reports are JUnit XML under the `-rd` directory.
 
 ## C#: gdUnit4Net (verified with Godot.NET.Sdk 4.7.2, .NET 10 SDK)
 - Add to the game csproj: `Microsoft.NET.Test.Sdk` 18.x, `gdUnit4.api` **5.1.0-rc5** (adapter 3.1.1 requires ≥5.1.0-rc5; 5.0.0 fails restore with NU1605), `gdUnit4.test.adapter` 3.1.1, `gdUnit4.analyzers` 1.0.0, plus `<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>`.

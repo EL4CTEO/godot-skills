@@ -6,7 +6,7 @@
     {
       "name": "godot-agent-skills",
       "source": "./",
-      "description": "18 tested Godot 4.7 skills: API lookup, scenes, GDScript, C#, 2D/3D, physics, UI, input, animation, shaders, audio, networking, export, testing, XR"
+      "description": "27 tested Godot 4.7 skills: API lookup, scenes, GDScript, C#, 2D/3D, physics, UI, input, animation, shaders, audio, networking, export, testing, XR, AI, procedural, migration, mobile/web, narrative, modding, game feel, addons"
     }
   ]
 }

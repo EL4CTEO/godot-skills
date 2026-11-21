@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+. Python 3.9+ for scripts/gd_check.py.
 metadata:
   author: godot-agent-skills
-  version: "1.0.3"
+  version: "1.1.0"
 ---
 
 # GDScript (4.7)

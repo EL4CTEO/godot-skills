@@ -5,7 +5,7 @@ license: MIT
 compatibility: Godot 4.7+.
 metadata:
   author: godot-agent-skills
-  version: "1.0.3"
+  version: "1.1.0"
 ---
 
 # 3D rendering (4.7)

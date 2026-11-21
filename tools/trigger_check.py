@@ -35,6 +35,16 @@ CASES = [
     ("C# signals are not disconnecting and I get ObjectDisposedException", "godot-csharp"),
     ("pixel art camera smoothing and y-sort for a top-down game", "godot-2d"),
     ("localize the UI and add screen reader accessibility", "godot-ui"),
+    ("enemies should pathfind on the navmesh, avoid each other and chase the player", "godot-navigation-ai"),
+    ("behavior tree or utility AI for my NPCs, with AStarGrid2D for the tactics grid", "godot-navigation-ai"),
+    ("third-person orbit camera with SpringArm3D and a GridMap level", "godot-3d-gameplay"),
+    ("generate random dungeons and caves with noise and a seed", "godot-procedural"),
+    ("upgrade my Godot 3 project and port code from Unity", "godot-migration"),
+    ("handle the notch safe area, Android back button and web export threads hosting", "godot-mobile-web"),
+    ("branching dialogue with choices, a typewriter text box and a quest log", "godot-narrative"),
+    ("let players install mods as PCK packs and sell DLC", "godot-modding-dlc"),
+    ("add screen shake, hit-stop and juice so attacks feel impactful", "godot-game-feel"),
+    ("which addon should I install from the Asset Store and is this GDExtension compatible", "godot-addons"),
 ]
 
 
